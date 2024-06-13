@@ -26,10 +26,18 @@
 }
 .home-title{
     color: #aba8a8;
+    font-size:12.8px;
+    line-height:20.48px;
 }
 .home-title:hover{
     color: #222222;
 }
+.home-title span{
+    font-size:12.8px;
+    line-height:20.48px;
+}
+
+
 .choose{
     color:#3a393a;
     line-height:25.6px;
@@ -221,9 +229,28 @@ text-align:center;
     background-color: #221f1f;
     color: #ffffff;
 }
+.explain{
+    color:#3a393a;
+    line-height: 25.6px;
+    margin-bottom: 20px;
+}
+.explain b{
+    display: inline;
+    font-weight: 700;
+}
 .main-description h2{
     margin-bottom: 12px;
+    font-weight: 900;
+    font-size: 25.6px;
+    line-height: 33.28px;
 }
 .main-description p{
     margin-bottom: 20px;
+    line-height: 25.6px;
+}
+.main-description h3{
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 32px;
+    margin-bottom: 10px;
 }
