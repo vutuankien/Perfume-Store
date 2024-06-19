@@ -100,14 +100,25 @@
     font-weight: 700;
     line-height:24.04px;
 }
+.search-bar{
+    display: flex;
+    flex-direction: row;
+}
 .text-input{
-    width: 166px;
+    width: 194px;
     height: 39px;
     background-color:#ffffff;
-    border: 0.5px solid #333333 ;
+    border: none;
     font-size:15.52px;
     line-height:24.832px;
     padding: 0 11px;
+    outline: none;
+    border: 0.3px solid #aba8a8;
+}
+/* đoạn này thêm */
+.text-input:focus{
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .btn-input{
     padding: 0 5px;
