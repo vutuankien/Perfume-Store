@@ -54,8 +54,14 @@
     padding-right: 21px;
     margin: 5px 0px;
     font-size: 15.52px;
+    outline: none;
  
 }
+/* đoạn này thêm vào */
+.choose select:focus{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+ }
 .main{
     width: 100%;
     padding: 30px 15px;
@@ -79,10 +85,17 @@
     width: 194px;
     height: 39px;
     background-color:#ffffff;
-    border: 0.5px solid #333333 ;
+    border: none;
     font-size:15.52px;
     line-height:24.832px;
     padding: 0 11px;
+    outline: none;
+    border: 0.3px solid #aba8a8;
+}
+/* đoạn này thêm */
+.text-input:focus{
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .btn-input{
     padding: 0 5px;
