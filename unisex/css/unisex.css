@@ -265,3 +265,18 @@ text-align:center;
     line-height: 32px;
     margin-bottom: 10px;
 }
+@media screen and (max-width:450px) {
+    .choose{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .main-items{
+        flex-basis: 100%;
+    }
+    .collectors{
+        flex-basis: 50%;
+    }
+    
+}

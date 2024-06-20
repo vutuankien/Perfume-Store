@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin: 20px 0px 0px 7px ; */
     padding: 20px 15px 0 15px;
 
 }
@@ -246,4 +245,19 @@ text-align:center;
 }
 .main-description p{
     margin-bottom: 20px;
+}
+@media screen and (max-width:450px) {
+    .choose{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .main-items{
+        flex-basis: 100%;
+    }
+    .collectors{
+        flex-basis: 50%;
+    }
+    
 }
