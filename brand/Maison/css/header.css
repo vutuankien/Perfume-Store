@@ -303,8 +303,7 @@ nav{
     display: flex;
     padding: 40px 30px;
     display: none;
-    z-index: 10; 
-    /* thêm z-index */
+    z-index: 10;
     transition: 0.3s ease-in-out;
     background-color: #fff;
 }
