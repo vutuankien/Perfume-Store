@@ -1,0 +1,45 @@
+.information{
+    margin: 50px 0;
+    // display: none;
+    .button-group{
+        display: flex;
+        .infor_btn{
+            padding: 8px 16px;
+            color: $black_text;
+            background-color: $white_text;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+    }
+    #description{
+        padding: 30px;
+        border: 1px solid #ccc;
+        line-height: 2;
+        .content-title{
+            font-size: $headingSize;
+        }
+        .content-des{
+            font-size: $normalSized;
+            color: #5e5c5c;
+        }
+        
+    }
+    #size{
+        display: none;
+        padding: 30px;
+        border: 1px solid #ccc;
+        line-height: 2;
+        .size{
+            font-size: $normalSized;
+            color: #000000;
+            font-weight: 600;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            span{
+                color:#333;
+                font-weight: 400;
+            }
+        }
+    }
+}
