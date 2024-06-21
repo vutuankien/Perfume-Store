@@ -51,6 +51,9 @@
     text-align:center;
     text-transform:uppercase;
 }
+.brand-cover{
+    flex-basis: 100%;
+}
 .brand-list{
     flex-basis: 100%;
     display: flex;
