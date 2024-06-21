@@ -254,3 +254,32 @@ li{
     background-color: #221f1f;
     color: #ffffff;
 }
+@media screen and (max-width:550px){
+    .content-blog{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-box-blog{
+        flex-basis: 100%;
+        width: 100%;
+        border-right: none;
+    }
+    .main-box-blog-items{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-items-text{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .blog-sidebar{
+        width: 100% ;
+    }
+    .text-input{
+        width: 303px;
+        height: 39px;
+    }
+    
+}
