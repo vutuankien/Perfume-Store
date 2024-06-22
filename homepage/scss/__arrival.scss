@@ -1,0 +1,79 @@
+.arrival{
+    margin-top: 40px;
+    .arrival-heading{
+        font-size: $heading_size;
+        color: $heading_color;
+        margin: 20px 0;
+        padding-left: 10px;
+    }
+    .carousel {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        overflow: hidden;
+        margin-top: 20px;
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            .carousel-item {
+                flex: 0 0 16.66666%; // Show 3 items per frame, adjust as needed
+                box-sizing: border-box;
+                padding: 10px;
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+                .perfume-type{
+                    text-align: center;
+                    font-size: $primary_size;
+                    color: $primary_color;
+                }
+                .perfume-name{
+                    width: 100%;
+                    text-align: center;
+                    font-size: $medium_size;
+                    color: $heading_color;
+                    font-weight: 600;
+                }
+                .perfume-price{
+                    text-align: center;
+                    font-size: $medium_size;
+                    color: $price_color;
+                }
+            }
+        }
+    
+        .carousel-control-prev, .carousel-control-next {
+            background-color: transparent;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            height: 50px;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            width: 50px;
+            
+    
+            &-icon {
+                font-size: 50px;
+                line-height: 50px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    
+        .carousel-control-prev {
+            left: 10px;
+        }
+    
+        .carousel-control-next {
+            right: 10px;
+        }
+    }
+    
+}
