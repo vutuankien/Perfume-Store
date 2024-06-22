@@ -1,0 +1,94 @@
+.bill{
+    flex-basis: 40%;
+    padding: 10px;
+    .bill-heading{
+        width: 100%;
+        text-align: center;
+        padding: 10px 15px;
+        border: 2px solid #000;
+    }
+    .bill-price{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px;
+        border-bottom: 1px solid #ccc;
+        .bill-price-text{
+            font-size: 20px;
+            color: #313030;
+        }
+        .bill-price-number{
+            font-size: 16px;
+            color: #f60606;
+            font-weight: 600;
+        }
+    }
+    .bill-total{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px;
+        border-bottom: 1px solid #ccc;
+        .bill-total-text{
+            font-size: 20px;
+            color: #313030;
+        }
+        .bill-total-number{
+            font-size: 16px;
+            color: #f60606;
+            font-weight: 600;
+        }
+    }
+    .pay{
+        margin-top: 30px;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline:none;
+        // border: 2px solid #000;
+        background-color: red;
+        color:#fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .discount{
+        margin-top: 20px;
+        font-size: 18px;
+        i{
+            font-size: 18px;
+            color:#333;
+        }
+        .discount-text{
+            font-size: 18px;
+            color:#000;
+            font-weight: 600;
+        }
+    }
+    .discount-input{
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+        color: #313030;
+        &::placeholder{
+            font-size: 15px;
+        }
+    }
+    .discount-apply{
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        border: none;
+        outline:none;
+        color:#000;
+        background-color: #e5e0e0;
+        font-size: 17px;
+        font-weight: 600;
+        &:hover{
+            background-color: #ccc;
+        }
+    }
+}
