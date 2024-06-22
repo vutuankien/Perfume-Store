@@ -131,5 +131,3 @@ function reloadPage(){
 }
 
 window.onload = displayCartItems;
-
-//add đeee
