@@ -1,0 +1,98 @@
+.news{
+    max-width: 1440px;
+    margin: 40px auto;
+    .news-heading{
+        font-size: 20px;
+        color: #000;
+        margin: 20px 0;
+        padding-left: 10px;
+    }
+    .news-carousel {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        overflow: hidden;
+        margin-top: 20px;
+        .news-carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+    
+            .news-carousel-item {
+                flex: 0 0 20%; // Show 3 items per frame, adjust as needed
+                box-sizing: border-box;
+                padding: 10px;
+                width: 20%;
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                gap: 5px;
+                overflow: hidden;
+                cursor: pointer;
+                img {
+                    overflow: hidden;
+                    display: block;
+                    width: 100%;
+                }
+                .date{
+                    position: absolute;
+                    text-align: center;
+                    left: 15px;
+                    top: 10%;
+                    width: 40px;
+                    background-color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid #000;
+                }
+                
+                .news-title{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 20px;
+                    color: #000;
+                    font-weight: 600;
+                }
+                .news-des{
+                    text-align: center;
+                    font-size: 16px;
+                    color: #333;
+                }
+                &:hover .date{
+                    background-color: #000;
+                    transition: 0.3s ease-in-out;
+                    color: #ffffff;
+                }
+            }
+        }
+    
+        .news-carousel-control-prev, .news-carousel-control-next {
+            background-color: transparent;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            height: 50px;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            width: 50px;
+            
+    
+            &-icon {
+                font-size: 50px;
+                line-height: 50px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    
+        .news-carousel-control-prev {
+            left: 10px;
+        }
+    
+        .news-carousel-control-next {
+            right: 10px;
+        }
+    }
+    
+}
