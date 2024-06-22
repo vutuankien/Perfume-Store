@@ -51,7 +51,7 @@ function sortProductsAsc(order) {
     console.log(sortedProducts);
 }
 
-document.querySelector('.select').addEventListener('change', function() {
+document.querySelector('.select').addEventListener('change', function () {
     const selectedOption = this.value;
 
     if (selectedOption === 'decrease') {
@@ -61,3 +61,27 @@ document.querySelector('.select').addEventListener('change', function() {
         sortProductsAsc('increase');
     }
 });
+
+
+function searchProducts() {
+    var searchValue = document.querySelector('.text-input').value.toLowerCase();
+    var collectors = document.querySelectorAll('.collectors');
+    var productNameEl = document.querySelectorAll('.collectors-items-name');
+    const main_items = document.querySelector('.main-items');
+    let found = false;
+
+    collectors.forEach((collector, index) => {
+        if (productNameEl[index].innerText.toLowerCase().includes(searchValue)) {
+            collector.style.display = 'block';
+            found = true;
+        } else {
+            collector.style.display = 'none';
+        }
+    });
+
+    if (!found) {
+        main_items.innerHTML = '<p style="text-align:center">Không tìm thấy sản phẩm trong giỏ hàng</p>';
+    } 
+}
+
+document.querySelector('.btn-input').addEventListener('click', searchProducts);
