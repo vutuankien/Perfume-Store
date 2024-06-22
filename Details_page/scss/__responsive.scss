@@ -1,0 +1,48 @@
+@media screen and (max-width: 1140px) {
+    .container{
+        max-width: 1140px;
+        margin: 0 auto  ;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    body{
+        padding: 0 15px;
+    }
+    .products{
+        flex-direction: column;
+    }
+
+    .wrapper{
+        max-width: 550px;
+        margin: auto;
+        .similar{
+            .similar-carousel { 
+                .similar-carousel-inner {
+                    .similar-carousel-item {
+                        flex: 0 0 50%;
+                    }
+                }   
+            }
+            
+        }
+    }
+    .news{
+        .news-carousel {
+            .news-carousel-inner {
+                .news-carousel-item {
+                    flex: 0 0 50%; // Show 3 items per frame, adjust as needed
+                }
+            }    
+        }   
+            
+    }
+
+    #comment{
+        .box-comment{   
+            .star{
+                font-size:  5px;
+            }
+        }
+    }
+}       

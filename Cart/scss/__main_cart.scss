@@ -1,0 +1,13 @@
+#Cart{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 5% 0;
+}
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+@import "./_cart-Product";
+@import "./_bill";
+@import "./_responsive"
