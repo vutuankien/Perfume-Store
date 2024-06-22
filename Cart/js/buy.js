@@ -126,4 +126,8 @@ function payment(){
 }
 
 
+function reloadPage(){
+    location.reload();
+}
+
 window.onload = displayCartItems;
