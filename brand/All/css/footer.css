@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    bottom: 0;
+    padding: 40px;
+    margin: 0px !important;
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+}
+/* footer p {
+    margin-block-end: 2px;//cái gì đây???
+} */
+
+.footer-infor{
+    flex-basis: 30%;
+}
+
+.footer-center{
+    flex-basis: 40%;
+    display: flex;
+    gap: 10px;
+}
+.footer-contact{
+    flex-basis: 30%;
+}
+.title {
+    margin: 20px 0px;
+
+
+}
+.title p a {
+    color:white;
+    font-weight: bold;
+}
+
+.address p a {
+    color: white;
+    font-weight: bold;
+
+}
+
+.content p{
+    color: #fff;
+    margin-bottom: 5px;
+}
+.content-link p{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.take_care, .follow {
+    /* margin: 0px 0px; */ 
+    /* 0 0 thì cho vô làm gì ko biết =)))) */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.content-link {
+    margin: 0px 0px;
+}
+
+.take_care h2 {
+    /* padding: 0px 0px; cho vào làm j :))?? */
+    font-size: 25px;
+    color: #fff;
+
+}
+
+.take_care p, .follow p{
+    margin-bottom: 20px;
+
+}
+.take_care p a {
+    color: white;
+    font-size: 20px;
+
+}
+.take_care p i{
+    color: #fff;
+}
+.follow {
+    /* width: 20%; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.follow h2 {
+    /* display:flex;
+    flex-direction: column; */
+    /* padding: 0px 0px; */
+    font-size: 25px;
+    color: #fff;
+    
+}
+
+.follow p a {
+    color: white;
+    font-size: 20px;
+    /* display: block; */
+}
+.follow p i{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.footer-contact h2{
+    margin-top: 20px;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* .map h2 { */
+    /* padding: 0px;
+    font-size: 13px;
+
+}
+
+.img-map>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.map p a>img {
+    width: 100%;
+    object-fit: cover;
+} */
+
+.color {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: #5B5B5B;
+    padding: 0px 0px;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.color p {
+    color: rgb(185, 177, 177);
+}
+
+.img-xomthom {
+    width: 100%;
+}   
+@media screen and (max-width: 1024px) {
+    footer{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:550px) {
+    footer{
+        flex-direction: column;
+    }
+    .footer-center{
+        flex-direction: column;
+    }
+}

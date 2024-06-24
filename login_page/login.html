@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0116)https://theproviderssolutions.com/public/portfolioviewpage/hBHiL42hNcVXf3wi3JexrhxSoXTlRMeySlide%20login%20form.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Login</title>
+    <link type="text/css" href="login.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Jost', sans-serif;
+            background-image: url(body.jpg);
+            backdrop-filter: blur(3px);
+            background-size: 100%;
+
+        }
+
+
+        .main {
+            width: 350px;
+            height: 500px;
+            background: red;
+            overflow: hidden;
+            background: url("huyendan.jpg") no-repeat center/ cover;
+            border-radius: 10px;
+            box-shadow: 5px 20px 50px #000;
+        }
+
+        #chk {
+            display: none;
+        }
+
+        .signup {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        label {
+            color: black;
+            font-size: 2.3em;
+            justify-content: center;
+            display: flex;
+            margin: 60px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        input {
+            width: 60%;
+            height: 20px;
+            background: #e0dede;
+            justify-content: center;
+            display: flex;
+            margin: 20px auto;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 60%;
+            height: 40px;
+            margin: 10px auto;
+            justify-content: center;
+            display: block;
+            color: black;
+            background: rgb(187, 182, 182);
+            font-size: 1em;
+            font-weight: bold;
+            margin-top: 20px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            transition: .2s ease-in;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: rgb(187, 182, 182);
+        }
+
+        .login {
+            height: 460px;
+            background: #eee;
+            border-radius: 60% / 10%;
+            transform: translateY(-180px);
+            transition: .8s ease-in-out;
+        }
+
+        .login label {
+            color: rgb(44, 41, 41);
+            transform: scale(.6);
+            font-weight: bold;
+        }
+
+        #chk:checked~.login {
+            transform: translateY(-500px);
+        }
+
+        #chk:checked~.login label {
+            transform: scale(1);
+        }
+
+        #chk:checked~.signup label {
+            transform: scale(.6);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup" id="register-container">
+            <form>
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="txt" placeholder="User name" required="">
+                <input type="email" name="email" placeholder="Email" id="register-email" required="">
+                <input type="password" name="pswd" placeholder="Password" id="register-password" required="">
+                <button onclick="signup()">Sign up</button>
+                <!-- <button onclick="resetLocalStorage()">Reset localStorage</button> -->
+            </form>
+        </div>
+
+        <div class="login" id="login-container">
+            <form>
+                <label for="chk" aria-hidden="true">Login </label>
+                <input id="login-email" type="email" name="email" placeholder="Email" required="">
+                <input id="login-password" type="password" name="pswd" placeholder="Password" required="">
+                <button onclick="login()">Login</button>
+            </form>
+        </div>
+
+
+
+    </div>
+
+</body>
+<script src="main.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</html>
