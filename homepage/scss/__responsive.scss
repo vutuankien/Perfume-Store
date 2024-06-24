@@ -1,0 +1,148 @@
+@media  screen and (max-width:1024px) {
+    
+}
+@media  screen and (max-width:550px) {
+    .background{
+        height: 300px;
+    }
+    .wrapper,.container{
+        max-width: 550px;
+        margin: 0 auto;
+    }
+    
+    .brand-ads{
+        max-width: 550px;
+        margin: 0;
+        align-items: stretch;
+        flex-direction: column;
+        flex-basis: 100%;
+        .carousel {
+            width: 100%;
+        }
+
+        .brand-logo {
+            width: 100%;
+            flex-wrap: nowrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a img{
+                width: 23%;
+            }
+        }
+        
+        
+    }
+    .arrival{
+        .carousel{
+            width: 100%;
+            .carousel-inner{
+                display: flex;
+                transition: transform 0.2s ease-in-out;
+                .carousel-item{
+                    flex: 0 0 50%; 
+                    box-sizing: border-box;
+                    padding: 10px;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .bestSeller{
+        .carousel{
+            width: 100%;
+            .carousel-inner{
+                display: flex;
+                transition: transform 0.2s ease-in-out;
+                .carousel-item{
+                    flex: 0 0 50%; 
+                    box-sizing: border-box;
+                    padding: 10px;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .deal{
+        .carousel{
+            width: 100%;
+            .carousel-inner{
+                display: flex;
+                transition: transform 0.2s ease-in-out;
+                .carousel-item{
+                    flex: 0 0 50%; 
+                    box-sizing: border-box;
+                    padding: 10px;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .news{
+        .carousel{
+            width: 100%;
+            .carousel-inner{
+                display: flex;
+                transition: transform 0.2s ease-in-out;
+                .carousel-item{
+                    flex: 0 0 50%; 
+                    box-sizing: border-box;
+                    padding: 10px;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .perfume-classify{
+        flex-direction: column;
+        .perfume-classify-items{
+            width: 100%;
+        }
+    }
+    .introduce{
+        padding: 0 10px;
+        .introduce-heading{
+            font-size: $medium_size;
+            padding: 0;
+        }
+        .introduce-img{
+            flex-direction: column;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+            .img-col{
+                width: 100%;
+            }
+        }
+    }
+
+}
