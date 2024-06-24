@@ -87,6 +87,8 @@ function calDiscount() {
     } else {
         swal("Không tìm thấy mã", "Xin vui lòng nhập lại", "error");
     }
+
+    localStorage.setItem('discount',tempPrice);
 }
 
 
@@ -110,22 +112,15 @@ function removeProduct(index) {
         displayCartItems();
     }
 }   
-
-
-function payment(){
-    const cart = JSON.parse(localStorage.getItem('products')) || [];
-    if (cart.length === 0) {
-        swal("Không có sản phẩm trong giỏ hàng", "Xin vui lòng thêm sản phẩm vào giỏ hàng", "error");
-        return;
+function checkCart(){
+    const cart = localStorage.getItem('products') || [];
+    if(cart.length === 0){
+        swal("Giỏ hàng trống","Vui lòng thêm sản phẩm vào giỏ hàng","error");
     }
-    swal("Thanh toán thành công", "Chúng tôi xin chân thành cảm ơn!", "success");
-    localStorage.removeItem('products');
-    document.querySelector('.bill-total-number').innerText = '0đ';
-    document.querySelector('.bill-price-number').innerText = '0đ';
-    displayCartItems();
+    else{
+        window.location.href = "../page/payment.html"
+    }
 }
-
-
 function reloadPage(){
     location.reload();
 }
