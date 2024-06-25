@@ -33,6 +33,10 @@ function displayBillItems() {
     document.querySelector('.bill-total-number').innerText = totalPrice.toLocaleString('vi', { style: 'currency', currency: 'VND' });
 }
 function pay(){
+    const input_value = document.querySelectorAll('.input-text');
+    input_value.forEach((input) => {
+        input.value = '';
+    });
     swal("Thanh toán thành công", "Chúng tôi xin chân thành cảm ơn!", "success");
     localStorage.removeItem('products');
     localStorage.removeItem('discount');
