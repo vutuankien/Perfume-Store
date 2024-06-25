@@ -27,6 +27,7 @@
 }
 @media screen and (max-width:550px) {
   .main{
-      width: 100%;
+      width: 300px;
+      height: 600px;
   }
 }
