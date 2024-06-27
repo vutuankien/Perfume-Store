@@ -30,28 +30,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Optionally, you can add auto-play functionality
     setInterval(() => {
         currentIndex = (currentIndex < indicators.length - 1) ? currentIndex + 1 : 0;
         updateCarousel(currentIndex);
-    }, 8000); // Change slide every 5 seconds
+    }, 5000);
 });
 
 
 const mainImage = document.getElementById('mainImage');
 
 mainImage.addEventListener('mouseover', () => {
-    mainImage.style.opacity = 0.5;  // Start fading out
+    mainImage.style.opacity = 0.5; 
     setTimeout(() => {
         mainImage.src = "./homepage/image/sub-image.png";
-        mainImage.style.opacity = 1;  // Start fading in
-    }, 200); // Match the CSS transition duration
+        mainImage.style.opacity = 1;  
+    }, 200);
 });
 
 mainImage.addEventListener('mouseout', () => {
-    mainImage.style.opacity = 0.5;  // Start fading out
+    mainImage.style.opacity = 0.5;  
     setTimeout(() => {
         mainImage.src = './homepage/image/background.png';
-        mainImage.style.opacity = 1;  // Start fading in
-    }, 200); // Match the CSS transition duration
+        mainImage.style.opacity = 1;  
+    }, 200); 
 });

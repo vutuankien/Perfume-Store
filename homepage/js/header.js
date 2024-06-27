@@ -17,7 +17,7 @@ function handleNavbarDisplay(e) {
     }
 }
 
-// Function to show the navbar
+
 function showNavbar() {
     navbar.style.display = 'block';
     hamburger.style.cursor = 'pointer';

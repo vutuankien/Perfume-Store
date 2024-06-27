@@ -1,5 +1,4 @@
 function displayCartItems() {
-    var x = 100000;
 
     const cart_products = document.querySelector('.cart-products');
     const cart = JSON.parse(localStorage.getItem('products')) || [];

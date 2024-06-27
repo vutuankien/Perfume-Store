@@ -3,12 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const items = document.querySelectorAll('.deal .carousel-item');
     const prevButton = document.querySelector('.deal .carousel-control-prev');
     const nextButton = document.querySelector('.deal .carousel-control-next');
-    const numVisibleItems = 5; // Number of visible items per frame
+    const numVisibleItems = 5;
 
     let currentIndex = 0;
     let isTransitioning = false;
 
-    // Clone the first and last items for infinite looping
     for (let i = 0; i < numVisibleItems; i++) {
         const firstClone = items[i].cloneNode(true);
         const lastClone = items[items.length - 1 - i].cloneNode(true);
@@ -61,8 +60,4 @@ document.addEventListener('DOMContentLoaded', () => {
     currentIndex = numVisibleItems;
     updateCarousel();
 
-    // Optionally, you can add auto-play functionality
-    // setInterval(() => {
-    //     moveToNext();
-    // }, 5000); // Change slide every 5 seconds
 });

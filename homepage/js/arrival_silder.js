@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const items = document.querySelectorAll('.arrival .carousel-item');
     const prevButton = document.querySelector('.arrival .carousel-control-prev');
     const nextButton = document.querySelector('.arrival .carousel-control-next');
-    const numVisibleItems = 6; // Number of visible items per frame
+    const numVisibleItems = 6; 
 
     let currentIndex = 0;
     let isTransitioning = false;
 
-    // Clone the first and last items for infinite looping
+
     for (let i = 0; i < numVisibleItems; i++) {
         const firstClone = items[i].cloneNode(true);
         const lastClone = items[items.length - 1 - i].cloneNode(true);

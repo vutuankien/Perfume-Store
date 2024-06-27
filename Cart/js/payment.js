@@ -18,10 +18,10 @@ function displayBillItems() {
         totalPrice += parseFloat(product.price * product.number) * 1000;  
     });
 
-    // Display the total price
+
     document.querySelector('.bill-price-number').innerText = totalPrice.toLocaleString('vi', { style: 'currency', currency: 'VND' });
 
-    // Display the discounted total price
+
     console.log(localStorage.getItem('discount'));
     const discount = parseFloat(localStorage.getItem('discount')) || 0;
     if(discount === 0){

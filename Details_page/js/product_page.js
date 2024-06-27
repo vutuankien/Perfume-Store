@@ -30,11 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Optionally, you can add auto-play functionality
     setInterval(() => {
         currentIndex = (currentIndex < indicators.length - 1) ? currentIndex + 1 : 0;
         updateCarousel(currentIndex);
-    }, 8000); // Change slide every 5 seconds
+    }, 8000); 
 });
 
 

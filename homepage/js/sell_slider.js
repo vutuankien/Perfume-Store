@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const items = document.querySelectorAll('.bestSeller .carousel-item');
     const prevButton = document.querySelector('.bestSeller .carousel-control-prev');
     const nextButton = document.querySelector('.bestSeller .carousel-control-next');
-    const numVisibleItems = 6; // Number of visible items per frame
+    const numVisibleItems = 6; 
 
     let currentIndex = 0;
     let isTransitioning = false;
 
-    // Clone the first and last items for infinite looping
+
     for (let i = 0; i < numVisibleItems; i++) {
         const firstClone = items[i].cloneNode(true);
         const lastClone = items[items.length - 1 - i].cloneNode(true);
@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     prevButton.addEventListener('click', moveToPrev);
     nextButton.addEventListener('click', moveToNext);
 
-    // Initial position
     currentIndex = numVisibleItems;
     updateCarousel();
 
